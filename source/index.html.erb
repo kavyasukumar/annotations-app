@@ -1,0 +1,15 @@
+<article class="article" role="article">
+<hgroup class="hed">
+  <h1><%= data.microcopy.title %></h1>
+</hgroup>
+
+<section class="byline">
+    by <a href="<%=data.microcopy.byline_link %>"><%=data.microcopy.byline %></a> on <%=Time.now.strftime('%B %e, %Y') %>
+</section>
+<section class="body">
+  <div id="introText" class="serif">
+    <p>This is an example of a live annotation display app based on <a href='https://storytelling.voxmedia.com/2017/1/20/14329600/annotation-feature-vox'>Vox Media Storytelling Studio's</a> work.</p>
+  </div>
+  <%= doc_markup %>
+</section>
+</article>

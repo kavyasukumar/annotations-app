@@ -1,0 +1,105 @@
+$harriet: "Harriet Text", Georgia, "Times New Roman", Times, serif !default;
+
+$annotation-bg: #f1f3f2;
+
+#introText {
+  margin-bottom: 40px;
+
+  p {
+    font-size: 1.4rem;
+    @media #{$small-only} {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+.cover img {
+  width: 100%;
+}
+
+.byline {
+  margin: 4px 0 40px;
+  text-align: center;
+  font-size: 1.1em;
+}
+
+.text-bar {
+  p {
+    padding: 0;
+  }
+}
+
+.highlight {
+  padding: 3px;
+  background-color: $vox-yellow;
+  font-weight: 600;
+}
+
+.serif,
+.serif > * {
+  font-family: $harriet;
+}
+
+.annotation {
+  margin-bottom: 16px;
+  padding: 20px 16px;
+
+  p {
+    margin-bottom: 0;
+    padding-right: 24px;
+    padding-left: 24px;
+    color: $body-font-color;
+    font-size: 16px;
+  }
+
+  .annotation-comment {
+    display: block;
+    padding: 16px 24px;
+    background-color: $annotation-bg;
+    overflow-wrap: break-word;
+
+    p {
+      padding-left: 0;
+      padding-right: 0;
+
+      a {
+        font-weight: 600;
+      }
+    }
+  }
+
+  .annotator {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-top: 5px solid $vox-yellow;
+    background-color: $annotation-bg;
+
+    .name {
+      padding-bottom: 0;
+      font-weight: 600;
+    }
+
+    .twitter-handle {
+      color: $primary-color;
+      font-weight: 600;
+
+      &:hover {
+        color: darken($primary-color,10);
+      }
+    }
+
+    p {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+  }
+}
+
+figure figcaption {
+  .image-credit {
+    font-size: 1em;
+    padding: 4px 8px 0;
+    color: lighten($body-font-color,10);
+    text-align: left;
+  }
+}

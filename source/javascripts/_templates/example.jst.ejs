@@ -1,0 +1,19 @@
+<p>You should delete this example file</p>
+
+<h1>A sample ejs file</h1>
+
+<p>You can print javascript variables like so:</p>
+<p>My Variable = <%=my_var %>
+<p>You can also use regular javascript there too:</p>
+<ul>
+<% _.each(list, function(item) { %>
+<li><%=item %></li>
+<% }) %>
+</ul>
+
+<p>You can use this template in your app.js file like so:</p>
+<pre>
+var template = window.JST['_templates/example'];
+var html = template({my_var: 'Hello!', list: [1, 2, 3, 4]});
+$('#example').html(html);
+</pre>

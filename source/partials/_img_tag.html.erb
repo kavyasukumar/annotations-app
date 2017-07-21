@@ -1,0 +1,8 @@
+<figure class="inline-image">
+  <img src="<%=value['url']%>" width="<%=value['width'] %>" height="<%=value['height'] %>">
+  <% if value['credit']-%>
+  <figcaption>
+    <div class="image-credit"><%=value['credit'] %></div>
+  </figcaption>
+  <% end -%>
+</figure>

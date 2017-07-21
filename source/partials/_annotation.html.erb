@@ -1,0 +1,12 @@
+<div class="annotation">
+  <div class="serif annotation-comment"><%= value %></div>
+  <div class="annotator">
+    <p>
+      <span class='name'><%= person.name %></span>,
+      <a class="twitter-handle"
+         href='<%= "http://twitter.com/#{person.twitter_handle.slice(1..person.twitter_handle.length)}" %>'>
+        <%= person.twitter_handle %>
+      </a>
+    </p>
+  </div>
+</div>

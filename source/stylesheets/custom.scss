@@ -1,0 +1,80 @@
+@import 'foundation/components/grid';
+@import 'foundation/components/type';
+
+$vox-yellow: rgb( 255, 242, 0 );
+body{
+  background-color: $white;
+}
+
+.breaker,
+.byline,
+.hed {
+  text-align: center;
+}
+
+.hed {
+  max-width: 650px;
+  margin:auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+  h1 {
+    line-height: 1.1em;
+    @media #{$medium-up} {
+      line-height: 1.2em;
+    }
+  }
+}
+
+.byline {
+  margin: 4px 0 40px;
+
+  text-align: center;
+
+  font-size: 1.1em;
+}
+
+.author {
+  font-size: 22px;
+}
+
+.tab-bar .left a.logo {
+  background-size: 40%;
+}
+
+section.body {
+  .annotation,
+  p {
+    max-width: 650px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 24px;
+    padding-left: 24px;
+
+    color: $body-font-color;
+  }
+
+  .advert,
+  figure.inline-image
+  {
+    display: block;
+
+    width: 100%;
+    max-width: 1060px;
+    margin-right: auto;
+    margin-bottom: $paragraph-margin-bottom;
+    margin-left: auto;
+
+    text-align: center;
+  }
+}
+
+.annotation p {
+  margin: auto;
+}
+@import 'partials/annotations';
+
+.serif,
+.serif > * {
+  font-family: $harriet;
+}
